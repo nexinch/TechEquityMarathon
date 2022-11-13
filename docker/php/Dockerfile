@@ -42,7 +42,7 @@ RUN apt-get update \
     && docker-php-ext-enable redis \
     && rm -rf /var/lib/apt/lists/*;
 
-COPY ./docker/php/laravel.ini /usr/local/etc/php/conf.d/laravel.ini
+# COPY ./docker/php/laravel.ini /usr/local/etc/php/conf.d/laravel.ini
 
 WORKDIR /usr/src/app
 
