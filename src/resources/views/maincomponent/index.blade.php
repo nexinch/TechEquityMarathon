@@ -502,7 +502,7 @@
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 pb-sm-20">
               <h3 class="line-bottom mt-0">Running <span class="text-theme-colored">Causes</span></h3>
-              <div class="owl-carousel-1col owl-nav-top" data-nav="true">
+             {{-- <div class="owl-carousel-1col owl-nav-top" data-nav="true">
                 @foreach ($activitys as $activity)
                 <div class="item">
                   <div class="causes bg-white maxwidth500 mb-30">
@@ -528,11 +528,11 @@
                   </div>
                 </div>
                 @endforeach
-              </div>
+              </div> --}}
             </div>
             <div class="col-xs-12 col-sm-6 col-md-4 pb-sm-20">
               <h3 class="line-bottom mt-0">Upcoming <span class="text-theme-colored">Events</span></h3>
-              <div class="bxslider bx-nav-top" data-count="3">
+             {{-- <div class="bxslider bx-nav-top" data-count="3">
                 @foreach($events as $event)
                 <div class="event media mt-0 mb-20 no-bg no-border">
                   <div class="event-date media-left text-center flip bg-theme-colored p-15 pt-20">
@@ -551,7 +551,7 @@
                   </div>
                 </div>
                 @endforeach
-              </div>
+              </div> --}}
               <a class="text-theme-colored font-weight-600 inline-block mt-15" href="{{ route('event.index') }}">more events →</a>
             </div>
           </div>
@@ -571,7 +571,7 @@
           </div>
         </div>
         
-        <div class="row multi-row-clearfix">
+       {{-- <div class="row multi-row-clearfix">
           @foreach($activities as $activity)
           <div class="col-sm-6 col-md-3 col-lg-3">
             <div class="causes bg-white maxwidth500 mb-30">
@@ -597,7 +597,7 @@
             </div>
           </div>
           @endforeach
-        </div>
+        </div> --}}
        
       </div>
     </section>
@@ -691,7 +691,7 @@
 
               <div class="gallery-isotope grid-4 gutter-small clearfix" data-lightbox="gallery">
                 <!-- Portfolio Item Start -->
-                @foreach ($galleries as $gallery)
+                {{--@foreach ($galleries as $gallery)
                   <div class="gallery-item">
                     <div class="thumb">
                       <img alt="project" src="{{ '/'.$gallery->image }}" class="img-fullwidth">
@@ -705,7 +705,7 @@
                       </div>
                     </div>
                   </div>
-                @endforeach
+                @endforeach--}}
                 <!-- Portfolio Item End -->
               </div>
               <!-- End Portfolio Gallery Grid -->
@@ -842,7 +842,7 @@
         </div>
         <div class="section-content">
           <div class="row">
-            @foreach ($blogs as $blog)
+          {{--  @foreach ($blogs as $blog)
               <div class="col-xs-12 col-sm-6 col-md-4">
                 <article class="post clearfix mb-sm-30 bg-silver-light">
                   <div class="entry-header">
@@ -862,7 +862,6 @@
                         <div class="event-content pull-left flip">
                           <h4 class="entry-title text-white text-uppercase m-0 mt-5"><a href="{{ route('news.show', $blog->slug) }}">{{ $blog->title }}</a></h4>
                           <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-commenting-o mr-5 text-theme-colored"></i> {{ count($blog->comments->where('valid', 1)) }} Comments</span>                       
-                          {{-- <span class="mb-10 text-gray-darkgray mr-10 font-13"><i class="fa fa-heart-o mr-5 text-theme-colored"></i> 895 Likes</span>                        --}}
                         </div>
                       </div>
                     </div>
@@ -872,7 +871,7 @@
                   </div>
                 </article>
               </div>
-            @endforeach
+            @endforeach --}}
           </div>
         </div>
       </div>
